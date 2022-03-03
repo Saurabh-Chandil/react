@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import UseDocuTitle from './UseDocuTitle'
 
-function CustomHookUseDocuTitle() {
+function CustomHookUseDocuTitleOne() {
     const [ count, setCount ] = useState(0)
     // useEffect(() => {
     //     document.title = count
@@ -14,4 +14,4 @@ function CustomHookUseDocuTitle() {
     )
 }
 
-export default CustomHookUseDocuTitle
+export default CustomHookUseDocuTitleOne

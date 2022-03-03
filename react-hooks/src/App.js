@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import CustomHookUseDocuTitleOne from './components/CustomHooks/CustomHookUseDocTitleOne';
+import CustomHookUseDocuTitle from './components/CustomHooks/CustomHookUseDocuTitle';
 import ComponentC from './components/useContext/ComponentC';
 import ClassCounter from './components/useEffect/ClassCounter';
 import EffectOnceClass from './components/useEffect/EffectOnceClass';
@@ -55,7 +57,10 @@ function App() {
       {/* <UseMemoCounter /> */}
       
       {/* <UseRefFocusInput /> */}
-      <UseRefHookCounter />
+      {/* <UseRefHookCounter /> */}
+      
+      <CustomHookUseDocuTitle />
+      <CustomHookUseDocuTitleOne />
     </div>
   )
 }
