@@ -1,0 +1,15 @@
+all the components while exporting should be wrapped in React.memo
+
+export default React.memo(Title) 
+
+
+useCallback(when func passed as prop to component) : 
+function before the re-render 
+is diff from func after the re-render and if this func
+is prop to some component(means this function is passed 
+as prop to some component) then React.memo will see the 
+prop has changed and will not stop the re-render. 
+
+const incrementAge = useCallback(() => {
+    setAge(age + 1)
+}, [])
