@@ -5,6 +5,8 @@ import Child from './components/Parent Child/Child';
 import { UseReducer } from './components/UseReducer/UseReducer';
 import { UseState } from './components/UseState/UseState';
 import { ParentOne } from './components/Incorrect Optimization/ParentOne';
+import { ContextRenderParent } from './components/Context and Render/ContextRenderParent';
+import { ChildA } from './components/Context and Render/ContextRenderChild';
 
 function App() {
   return (
@@ -16,10 +18,16 @@ function App() {
       {/* 1. <Parent /> */}
       {/* <Parent>
         <Child /> 
-        2. way
+        2. way ~ same element reference
       </Parent> */}
 
-      <ParentOne />
+      {/* <ParentOne /> */}
+
+      {/* 1.way <ContextRenderParent /> */}
+      {/* 2.way */}
+      <ContextRenderParent>
+        <ChildA />
+      </ContextRenderParent>
     </div>
   );
 }
