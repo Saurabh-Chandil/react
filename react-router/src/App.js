@@ -26,7 +26,7 @@ function App() {
           <Route path='featured' element={<FeaturedProducts />}></Route>
         </Route>
         <Route path='/users' element={<Users />}>
-          <Route path=':userID' element={<UserDetails />}/>
+          <Route path=':userID' element={<UserDetails />} />
         </Route>
       </Routes>
     </>    
